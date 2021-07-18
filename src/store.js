@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
-import valueReducer from './reducers/valuesSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import valueReducer from "./reducers/valuesSlice";
 
 export default configureStore({
   reducer: {
-    value: valueReducer
-  }
-})
+    value: valueReducer,
+  },
+});

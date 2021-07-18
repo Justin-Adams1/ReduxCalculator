@@ -1,34 +1,29 @@
-import './App.css';
-import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { subtract, add } from './reducers/valuesSlice'
-
-
+import "./App.css";
+import React from "react";
+import { useSelector } from "react-redux";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/row";
+import Col from "react-bootstrap/Col";
+import Buttons from './buttons';
 
 function App() {
-  const count = useSelector(state => state.value.value)
-  const dispatch = useDispatch()
-
+  const value = useSelector((state) => state.value.value);
 
   return (
-    <>
-      <h1>Redux React Calculator!</h1>
-      <div>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(add())}
-        >
-          Increment
-        </button>
-        <span>{count}</span>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(subtract())}
-        >
-          Decrement
-        </button>
-      </div>
-    </>
+    <Container>
+      <Row>
+        <Row>
+          <h1>Redux React Calculator!</h1>
+        </Row>
+      </Row>
+      <Row>
+        <span>{value}</span>
+      </Row>
+      <Row>
+        <Buttons />
+      </Row>
+    </Container>
   );
 }
 
