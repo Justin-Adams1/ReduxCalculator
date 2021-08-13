@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/row";
 import Col from "react-bootstrap/Col";
 import Buttons from './buttons';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const value = useSelector((state) => state.value.value);
