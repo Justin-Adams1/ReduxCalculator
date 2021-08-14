@@ -20,23 +20,23 @@ const Buttons = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
+    <Container fluid>
       <Row>
-        <Col>
-          <Button onClick={() => dispatch(add())}>Add</Button>
+        <Col className="btn-group">
+          <Button onClick={() => dispatch(add())}>Add</Button>&nbsp;
           <Button onClick={() => dispatch(subtract())}>Subtract</Button>
         </Col>
       </Row>
       <Row>
-        <Col>
-          <Button onClick={() => dispatch(multiply(2))}>Multiply by 2</Button>
-          <Button onClick={() => dispatch(divide(2))}>Divide by 2</Button>
+        <Col className="btn-group">
+          <Button onClick={() => dispatch(multiply(2))}>Multiply by 2</Button>&nbsp;
+          <Button onClick={() => dispatch(divide(2))}>Divide by 2</Button>&nbsp;
           <Button onClick={() => dispatch(multiply(value))}>Square</Button>
         </Col>
       </Row>
       <Row>
-        <Col>
-          <Button onClick={() => dispatch(root())}>root</Button>
+        <Col className="btn-group">
+          <Button onClick={() => dispatch(root())}>root</Button>&nbsp;
           <Button onClick={() => dispatch(clear())}>clear</Button>
         </Col>
       </Row>

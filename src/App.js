@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/row";
-import Col from "react-bootstrap/Col";
+import Col from "react-bootstrap/col";
 import Buttons from './buttons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,17 +13,20 @@ function App() {
 
   return (
     <Container>
-      <Row>
-        <Row>
-          <h1>Redux React Calculator!</h1>
+
+      <Col className="main">
+
+        <Row className="valueBox">
+          <h1>{value}</h1>
+          <h4>{value}</h4>     
         </Row>
-      </Row>
-      <Row>
-        <span>{value}</span>
-      </Row>
-      <Row>
-        <Buttons />
-      </Row>
+   
+        <Row>
+          <Buttons />
+        </Row>
+
+      </Col>
+
     </Container>
   );
 }

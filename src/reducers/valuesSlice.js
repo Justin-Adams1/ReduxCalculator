@@ -4,6 +4,7 @@ export const valueSlice = createSlice({
   name: "value",
   initialState: {
     value: 0,
+    entry: 0,
   },
   reducers: {
     add: (state) => {
@@ -23,6 +24,36 @@ export const valueSlice = createSlice({
     },
     clear: (state) => {
       state.value = 0;
+    },
+    one: (state) => {
+      state.entry = 0;
+    },
+    two: (state) => {
+      state.entry = 0;
+    },
+    three: (state) => {
+      state.entry = 0;
+    },
+    four: (state) => {
+      state.entry = 0;
+    },
+    five: (state) => {
+      state.entry = 0;
+    },
+    six: (state) => {
+      state.entry = 0;
+    },
+    seven: (state) => {
+      state.entry = 0;
+    },
+    eight: (state) => {
+      state.entry = 0;
+    },
+    nine: (state) => {
+      state.entry = 0;
+    },
+    zero: (state) => {
+      state.entry = 0;
     },
   },
 });
