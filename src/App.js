@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const value = useSelector((state) => state.value.value);
+  const entry = useSelector((state) => state.value.entry);
 
   return (
     <Container>
@@ -17,8 +18,8 @@ function App() {
       <Col className="main">
 
         <Row className="valueBox">
-          <h1>{value}</h1>
-          <h4>{value}</h4>     
+          <h4>{entry}</h4>   
+          <h1>{value}</h1>  
         </Row>
    
         <Row>

@@ -1,6 +1,6 @@
 .main{
   width: 400px;
-  height: 600px;
+  height: auto;
   border-style: solid;
   padding: 2%;
 }

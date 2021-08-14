@@ -8,6 +8,17 @@ import {
   divide,
   root,
   clear,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  zero,
+  resolve
 } from "./reducers/valuesSlice";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
@@ -22,6 +33,33 @@ const Buttons = () => {
   return (
     <Container fluid>
       <Row>
+        <Row>
+        <Col className="btn-group">
+          <Button onClick={() => dispatch(resolve())}>Resolve</Button>
+        </Col>
+        </Row>
+        <Row>
+        <Col className="btn-group">
+          <Button onClick={() => dispatch(one())}>1</Button>&nbsp;
+          <Button onClick={() => dispatch(two())}>2</Button>&nbsp;
+          <Button onClick={() => dispatch(three())}>3</Button>&nbsp;
+        </Col>
+        </Row>
+        <Row>
+        <Col className="btn-group">
+          <Button onClick={() => dispatch(four())}>4</Button>&nbsp;
+          <Button onClick={() => dispatch(five())}>5</Button>&nbsp;
+          <Button onClick={() => dispatch(six())}>6</Button>&nbsp;
+        </Col>
+        </Row>
+        <Row>
+        <Col className="btn-group">
+          <Button onClick={() => dispatch(seven())}>7</Button>&nbsp;
+          <Button onClick={() => dispatch(eight())}>8</Button>&nbsp;
+          <Button onClick={() => dispatch(nine())}>9</Button>&nbsp;
+          <Button onClick={() => dispatch(zero())}>0</Button>&nbsp;
+        </Col>
+        </Row>
         <Col className="btn-group">
           <Button onClick={() => dispatch(add())}>Add</Button>&nbsp;
           <Button onClick={() => dispatch(subtract())}>Subtract</Button>
