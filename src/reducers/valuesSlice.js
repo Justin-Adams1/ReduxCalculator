@@ -11,13 +11,13 @@ export const valueSlice = createSlice({
       state.value = state.value + state.entry;
     },
     subtract: (state) => {
-      state.value = state.value + state.entry;
+      state.value = state.value - state.entry;
     },
     divide: (state, action) => {
-      state.value = state.value + state.entry;
+      state.value = state.value / state.entry;
     },
     multiply: (state, action) => {
-      state.value = state.value + state.entry;
+      state.value = state.value * state.entry;
     },
     root: (state) => {
       state.value = Math.sqrt(state.value);
